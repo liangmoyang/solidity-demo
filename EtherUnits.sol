@@ -12,8 +12,13 @@ contract EtherUnits{
         return oneWei == 1;
     }
 
+    function testOneGwei() public view returns (bool){
+        return oneGwei == 1*10**9 wei;
+    }
+
     function testOneEther() public view returns(bool){
         return oneEther == 1* 10**18 wei;
     }
+
 
 }
